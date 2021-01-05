@@ -31,7 +31,7 @@ li {
 }
 
 #brand {
-    padding-right: 68vw;
+    padding-right: 60vw;
     
 }
 
@@ -55,10 +55,10 @@ li {
 
 footer {
     margin-left: 0;
+    right:0;
 }
 
 footer a {
     text-decoration: none;
     color: white;
-    
 }
