@@ -7,14 +7,13 @@ body {
 }
 nav {
     margin: 0;
-    
+    width: 100%;
     font-size: 1.5em;
 }
 ul {
-    overflow:hidden;
+    /* overflow:hidden; */
     white-space:nowrap; 
-    height: 25px;
-    width: 100%;
+    height: auto;
     background-color:black;
     color: white;
     margin-left: 0;
@@ -31,7 +30,7 @@ li {
 }
 
 #brand {
-    padding-right: 60vw;
+    padding-right: 70vw;
     
 }
 
@@ -61,4 +60,49 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    
+    
+    
+    
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    body {
+        background-size: auto;
+        background-position: center;
+    }
+    #page {
+        position: relative;
+        top: 200px;
+    }
+    footer {
+        position: relative;
+        top: 200px;
+    }
+    li {
+        display: block;
+    }
+}
+
+@media all and (max-width: 480px) { 
+  
+    li {
+        display: block;
+    }
 }
