@@ -86,6 +86,7 @@ footer a {
     body {
         background-size: auto;
         background-position: center;
+        background-color: black;
     }
     #page {
         position: relative;
@@ -101,7 +102,22 @@ footer a {
 }
 
 @media all and (max-width: 480px) { 
-  
+    body {
+        background-size: auto;
+        background-position: center;
+        background-color: black;
+    }
+    #page {
+        position: relative;
+        top: 200px;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    footer {
+        position: relative;
+        top: 200px;
+    }
     li {
         display: block;
     }
