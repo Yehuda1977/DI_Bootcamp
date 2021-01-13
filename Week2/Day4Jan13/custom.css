@@ -1,0 +1,32 @@
+body {
+    background-image: url(lighthouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.jumbotron {
+    padding-bottom: 200px;
+}
+
+.jumbotron > h1 {
+    color: white;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 200px;
+   
+}
+
+.jumbotron > button {
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    
+    
+}

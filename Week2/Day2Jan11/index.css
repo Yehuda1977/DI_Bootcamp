@@ -3,55 +3,32 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 3fr 1fr;
-    justify-items: center;   
-}
-
-.left {
+    justify-items: center; 
+    background-color:black;
     
-    border: 1px solid;
 }
 
-.middle {
-    
-    border: 1px solid;
-}
-
-.right {
-   
-    border: 1px solid;
-}
-
-
-
-.flex-container-column {
+.flex-container {
     display: flex;
-    flex-wrap: nowrap;
+}
+
+.flex-container > div {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border: 1px solid;
+}
+
+ .column {
     flex-direction: column;
-    
-    
   }
 
-  .flex-container-column > div {
-      background-color: yellow;
-      height: 100px;
-      width: 100px;
-      margin: 20px;
-      border: 1px solid;
+ .middle {
+     align-items: center;
   }
 
-  .flex-container-middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
-  .flex-container-middle > div {
-      background-color: yellow;
-      height: 100px;
-      width: 100px;
-      margin: 20px;
-      border: 1px solid;
 
-      
-      
-  }
+  
