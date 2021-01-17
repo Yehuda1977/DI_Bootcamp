@@ -1,0 +1,24 @@
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: lightgray;
+}
+
+.card-section {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    
+}
+
+.card {
+    border: none;
+}
+
+form > button {
+    width: 175px;
+}

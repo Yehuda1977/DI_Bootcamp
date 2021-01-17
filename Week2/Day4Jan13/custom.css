@@ -1,32 +1,113 @@
-body {
+.landing {
     background-image: url(lighthouse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+
+.hero {
+    padding: 250px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
     transform: scale(1.1);
-    color: white;
+    
 }
 
-.jumbotron {
+/* .jumbotron {
     padding-bottom: 200px;
-}
+} */
 
-.jumbotron > h1 {
-    color: white;
-    padding-left: auto;
-    padding-right: auto;
-    padding-top: 200px;
-   
-}
 
 .jumbotron > button {
     font-size: 1rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top:15px;
-    padding-bottom:15px;
+    
     
     
 }
+
+.card-section {
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px;
+}
+
+/* .card {
+    border: none;
+} */
+
+.card-header {
+    
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    color: #0d6efd;
+}
+
+.card, .card-footer {
+    border: none;
+    background-color: transparent;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 990px) { 
+    .card-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
+    }
+
+   
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    .card-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
+    }
+
+    .hero {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media all and (max-width: 480px) { 
+   
+    .card-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
+    }
+
+    .hero {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /* justify-content: center; */
+    }
+}
+
