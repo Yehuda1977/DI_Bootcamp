@@ -4,18 +4,17 @@ let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 console.log(fruits);
 fruits.shift();
 console.log(fruits);
-fruits.push('Kiwi');
+fruits.push("Kiwi");
 console.log(fruits);
-fruits.splice(0,1);
+fruits.splice(0, 1);
 console.log(fruits);
 let reverseFruits = [];
-for(let fruit of fruits){
-    reverseFruits.unshift(fruit);
+for (let fruit of fruits) {
+  reverseFruits.unshift(fruit);
 }
 console.log(reverseFruits);
 
-console.log(fruits); 
-
+console.log(fruits);
 
 // // Favorite Color
 
@@ -24,8 +23,8 @@ console.log(fruits);
 
 // // Mixup
 
-// let str1 = 'mix'; 
-// let str2 = 'pod'; 
+// let str1 = 'mix';
+// let str2 = 'pod';
 
 // let newWord = (str2.slice(0,2) + str1.slice(-1)) + ' ' + (str1.slice(0,2) + str2.slice(-1))
 // console.log(newWord)
@@ -54,4 +53,3 @@ console.log(fruits);
 
 // let sum = Number(additionArray[0]) + Number(additionArray[1]);
 // alert(sum);
-
