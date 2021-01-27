@@ -16,7 +16,7 @@ const my_f = (digit) => {
         calcDisplay.innerHTML += digit;
 }
 
-const reset = () => {
+const reset  = () => {
     calcDisplay.innerHTML = ''
             calculated = false;
 }
