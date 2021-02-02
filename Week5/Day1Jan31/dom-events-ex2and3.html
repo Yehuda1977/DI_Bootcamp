@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section">
+        <div id="div">
+            <button id="jsstyle">Style</button> 
+        </div>
+    </section>
+
+    <script>
+       let btn = document.getElementById("jsstyle")
+       let y = document.getElementById("div")
+       let z = document.getElementById("section")
+
+    //    btn.addEventListener("click", BtnRespondClick); 
+    //    y.addEventListener("click", YRespondClick); 
+    //    z.addEventListener("click", ZRespondClick); 
+
+    //    function BtnRespondClick(e) { 
+    //        alert("BTN is Clicked")
+    //        e.stopPropagation()
+    //    }    
+
+    //    function YRespondClick(e) { 
+    //        alert("DIV is Clicked")
+    //    }    
+
+    //     function ZRespondClick(e) { 
+    //        alert("SECTION is Clicked")
+    //    }  
+
+
+
+        let count = 0;
+        let p = document.createElement("p");
+        p.innerHTML = 'The button has been pressed ' + (count++) + ' times.';
+        document.body.appendChild(p)
+
+        btn
+        .addEventListener("click",(e)=>{
+            console.log(e, "button has been pressed")
+            e.target.setAttribute("style", "background:red")
+            p.innerHTML = 'The button has been pressed ' + (count++) + ' times.'
+        })
+
+    </script>
+    <!-- <button id="btn">Click me</button>
+    <button id="btn1">Hey Hey</button>
+
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("btn1")
+
+        y.addEventListener("mouseover", RespondMouseOver);
+
+        x.addEventListener("mouseover", RespondMouseOver); 
+
+        function RespondMouseOver(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        } 
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- Write a JavaScript function to :
+
+1. Get the value of the 2nd Option
+2. Add a new option with the value 'Work' at the end of the select form
+3. Add a new option with the value 'Primary School' at the beginning of the select form
+4. Change 'College' as selected. Use the 3 properties we learned above
+5. Add a button that alert the choice selected -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select1"> 
+        <option value="middle">Middle School</option>
+        <option value="uni">University</option>
+        <option value="college">College</option>
+    </select>
+
+    <script>
+        let form = document.getElementById('select1')
+        console.log(form[1].value)
+
+        let work = document.createElement('option')
+        work.setAttribute('value', 'work')
+        form.appendChild(work).innerHTML = "Work"
+        
+        let primary = document.createElement('option')
+        primary.setAttribute('value', 'primary')
+        form.insertBefore(primary, form.firstChild).innerHTML = "Primary"
+
+        form.options[3].selected = true;
+
+        let button = document.createElement('button')
+        
+        document.body.appendChild(button).innerHTML = "Click Me"
+        
+        button.addEventListener('click', (e)=>{e.preventDefault; alert(form.value)})
+    </script>
+</body>
+</html>
