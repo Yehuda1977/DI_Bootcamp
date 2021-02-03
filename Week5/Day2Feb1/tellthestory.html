@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+        let noun = document.getElementById('noun');
+        let adjective = document.getElementById('adjective');
+        let person = document.getElementById('person');
+        
+        let libButton = document.getElementById('lib-button');
+        let libIt = function() {
+            let storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = `Every time ${person.value} sees a ${adjective.value} ${noun.value} s/he is happy.`;
+        };
+        libButton.addEventListener('click', libIt);
+    </script>
+</body>
+</html>

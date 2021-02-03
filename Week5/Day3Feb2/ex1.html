@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1 {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: yellow;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        let count = 10;
+        const banner = () => {
+            setInterval(()=>{
+            h1.innerHTML = `<h1>The sale ends in ${count} mins!</h1>`
+            if(count>0){
+                count--;
+            }
+            }, 1000)
+        }
+
+        div = document.createElement('div');
+        document.body.appendChild(div)
+        h1 = document.createElement('h1');
+        div.appendChild(h1);
+        h1.innerHTML = `<h1>The sale ends in ${count} mins!</h1>`
+        banner();
+    </script>
+    
+</body>
+</html>
