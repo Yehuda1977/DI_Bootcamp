@@ -14,9 +14,6 @@
 #     #t%
 #     ^r!
 
-
-
-
 def read_matrix(matrix):
     # the matrix of arrays is reformatted based on reading each column from top to bottom,
     # one new array is created that contains all the characters
