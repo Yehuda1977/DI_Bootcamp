@@ -19,15 +19,14 @@ class Farm:
             print(f'{animal}: {self.animals[animal]}')
     def get_animal_types(self):
         animal_types = []
-        print('These are all the animal types:')
         for key in self.animals.keys():
             animal_types.append(key)
         animal_types.sort()
-        print(animal_types)
+        
         return animal_types
     def get_short_info(self):
         short_info = ('(s), ').join(self.get_animal_types())
-        print(f'{self.name} has {short_info}(s).')
+        print(f'{self.name} Farm has {short_info}(s).')
         
         
 
@@ -40,5 +39,5 @@ McDonalds.add_animal('Chicken', 14)
 McDonalds.add_animal('Horse')
 McDonalds.add_animal('Pig', 2)
 McDonalds.list_animals()
-McDonalds.get_animal_types()
+print(McDonalds.get_animal_types())
 McDonalds.get_short_info()
