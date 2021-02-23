@@ -16,7 +16,7 @@
 
 def read_matrix(matrix):
     # the matrix of arrays is reformatted based on reading each column from top to bottom,
-    # one new array is created that contains all the characters
+    # one new array needs to be created that contains all the characters
     # a while loop is used to control which index of the array is being added in the for loop
     columns = []
     index = 0
@@ -36,7 +36,7 @@ def read_matrix(matrix):
             decoded_matrix += ' '
     
     # In order to remove extra whitespace the decoded_matrix string is split into
-    # an array of words and then joined again with only one space
+    # an array of words (by default split splits along the space) and then joined again with only one space
     decoded_matrix = ' '.join(decoded_matrix.split())
         
     print(columns)
