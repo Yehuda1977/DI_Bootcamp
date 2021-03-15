@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <img src="{{ img_url }}">
+    
+    <hr>
+
+    <h2>My hobbies are:</h2>
+    {%for hobbie in hobbies%}
+    <ul>
+        <li>{{hobbie}}</li>
+    </ul>
+    {%endfor%}
+    
+    <hr>
+    
+    <h2>My strengths are:</h2>
+    {%for strength in strengths%}
+    <ul>
+        <li>{{strength}}</li>
+    </ul>
+    {%endfor%}
+
+    <hr>
+
+    <h2>My weaknesses are:</h2>
+    {%for weakness in weaknesses%}
+    <ul>
+        <li>{{weakness}}</li>
+    </ul>
+    {%endfor%}
+
+    <hr>
+
+    <h2>My skills are:</h2>
+    {%for skill in skills%}
+    <ul>
+        <li>{{skill}}</li>
+    </ul>
+    {%endfor%}
+
+
+    <script src="static/script.js"></script>
+</body>
+</html>
