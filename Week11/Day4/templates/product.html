@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    
+    <div class="card" style="width: 500px; height: 500px">
+        <img class="card-img-top" src="../static/{{product['ProductPicUrl']}}" alt="{{product['ProductId']}}">
+        <div class="card-body">
+        <h5 class="card-title">{{product['Name']}}</h5>
+        <p class="card-text">{{product['Description']}}</p>
+        <p class="card-text text-success">{{product['Price']}} {{product['CurrencyCode']}}</p>
+        <a href="/add_product_to_cart/{{product['ProductId']}}" class="btn btn-primary">Add to cart</a>
+
+        </div>
+    </div>
+</div>
+        
+
+
+
+
+{% endblock %}

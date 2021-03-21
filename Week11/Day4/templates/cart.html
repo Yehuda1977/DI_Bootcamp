@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card-deck">
+    <!-- <div class="row"> -->
+        {% for product in cart_item %}
+        
+            <div class="col-sm-3">
+                <div class="card" w-50>
+                    <img class="card-img-top" src="../static/{{product['ProductPicUrl']}}" alt="{{product['ProductId']}}">
+                    <div class="card-body">
+                    <h5 class="card-title">{{product['Name']}}</h5>
+                    <p class="card-text text-success">{{product['Price']}} {{product['CurrencyCode']}}</p>
+                    <a href="/delete_product_from_cart/{{product['ProductId']}}" class="btn btn-primary">Remove from cart</a>
+
+                    </div>
+                </div>
+            
+            </div>
+       
+        {%endfor%}
+        
+    <!-- </div> -->
+</div>
+<div class="card">
+    
+    <p class="text-success" style="text-align:center">Total: {{total}} EUR</p>
+</div>
+
+
+
+{% endblock %}

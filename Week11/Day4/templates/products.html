@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card-deck">
+<!-- <div class="row"> -->
+    {% for product in all_products %}
+    
+        <div class="col-sm-3">
+            <div class="card" w-50>
+                <img class="card-img-top" src="../static/{{product['ProductPicUrl']}}" alt="{{product['ProductId']}}">
+                <div class="card-body">
+                <h5 class="card-title">{{product['Name']}}</h5>
+                <p class="card-text">{{product['Description']}}</p>
+                <p class="card-text text-success">{{product['Price']}} {{product['CurrencyCode']}}</p>
+
+                <a href="/products/{{product['ProductId']}}" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        <!-- <div class="container">
+            <h1>{{product['ProductId']}}</h1>
+            <img src="../static/{{product['ProductPicUrl']}}" alt="{{product['ProductId']}}">
+            
+        </div> -->
+        </div>
+   
+    {%endfor%}
+<!-- </div> -->
+</div>
+
+
+{% endblock %}
