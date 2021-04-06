@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Form</h2>
+    {% for field, errors in form.errors.items() %}
+    {{ ', '.join(errors) }}
+    {% endfor %}
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+    <p>
+        {{ form.first_name.label }}
+        {{ form.first_name() }}
+    </p>    
+    <p>
+        {{ form.last_name.label }}
+        {{ form.last_name() }}
+    </p>
+    <p>
+        {{ form.age.label }}
+        {{ form.age() }}
+    </p>
+    <p>
+        {{ form.experience.label }}
+        {{ form.experience() }}
+    </p>
+   
+    <p>
+        {{ form.submit() }}
+    </p>
+    </div>
+</form>
+{% endblock %}
