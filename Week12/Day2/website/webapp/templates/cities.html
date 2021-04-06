@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+    <p>
+        {{ name }} is a city in {{ country }}.
+    </p>
+    <p>
+        {{ name }} has a population of {{ population }} inhabitants.
+    </p>
+    {% if area %}
+    <p>
+        The area of {{ name }} is {{ area }} square kilometers.
+    </p>
+    {% endif %}
+{% endblock %}

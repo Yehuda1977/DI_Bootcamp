@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Registration Form</h2>
+    {% for field, errors in form.errors.items() %}
+    {{ ', '.join(errors) }}
+    {% endfor %}
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.city_name.label }}
+        {{ form.city_name() }}
+    </p>
+    <p>
+        {{ form.city_country.label }}
+        {{ form.city_country() }}
+    </p>
+    <p>
+        {{ form.city_population.label }}
+        {{ form.city_population() }}
+    </p>
+    <p>
+        {{ form.city_area.label }}
+        {{ form.city_area() }}
+    </p>
+    
+    <p>
+        {{ form.submit() }}
+    </p>
+</form>
+{% endblock %}
